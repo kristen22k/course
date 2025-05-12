@@ -1,0 +1,179 @@
+my-landing
+   ├── import React from "react";
+import { Div } from "./Div";
+import { DivWrapper } from "./DivWrapper";
+import { Element } from "./Element";
+import { SectionComponentNode } from "./SectionComponentNode";
+import { View } from "./View";
+import { ViewWrapper } from "./ViewWrapper";
+import "./style.css";
+import videoCall from "./video-call.png";
+
+export const Page = () => {
+  return (
+    <div className="page">
+      <div className="div-4">
+        <div className="overlap-13">
+          <div className="rectangle-2" />
+
+          <View />
+        </div>
+
+        <div className="overlap-14">
+          <Element />
+          <p className="text-wrapper-38">
+            Курс для жінок, які втомились “триматись” і хочуть знову жити
+          </p>
+
+          <img className="video-call" alt="Video call" src={videoCall} />
+        </div>
+
+        <DivWrapper />
+        <ViewWrapper />
+        <p className="text-wrapper-39">
+          До зустрічі в просторі, де можна не триматись — а просто бути❤
+        </p>
+
+        <div className="overlap-15">
+          <Div />
+          <div className="group-10">
+            <div className="overlap-16">
+              <div className="text-wrapper-40">1</div>
+            </div>
+          </div>
+        </div>
+
+        <SectionComponentNode />
+      </div>
+    </div>
+  );
+};
+
+   ├── .page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.page .div-4 {
+  background-color: #ffffff;
+  height: 3707px;
+  position: relative;
+  width: 1440px;
+}
+
+.page .overlap-13 {
+  height: 483px;
+  left: 64px;
+  position: absolute;
+  top: 3036px;
+  width: 1265px;
+}
+
+.page .rectangle-2 {
+  background-color: #6c6d4f;
+  border: 1px solid;
+  border-color: #d18eaa;
+  border-radius: 100px;
+  height: 59px;
+  left: 1px;
+  position: absolute;
+  top: 424px;
+  width: 1261px;
+}
+
+.page .overlap-14 {
+  height: 909px;
+  left: 29px;
+  position: absolute;
+  top: -11px;
+  width: 1391px;
+}
+
+.page .text-wrapper-38 {
+  color: #6c6d4f;
+  font-family: "e-Ukraine Head-Regular", Helvetica;
+  font-size: 20.7px;
+  font-weight: 400;
+  left: 3px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 51px;
+  width: 798px;
+}
+
+.page .video-call {
+  height: 51px;
+  left: 71px;
+  position: absolute;
+  top: 157px;
+  width: 23px;
+}
+
+.page .text-wrapper-39 {
+  color: #070a11;
+  font-family: "Unbounded-Regular", Helvetica;
+  font-size: 34px;
+  font-weight: 400;
+  left: 49px;
+  letter-spacing: 0;
+  line-height: 47.6px;
+  opacity: 0.7;
+  position: absolute;
+  top: 3605px;
+  width: 1375px;
+}
+
+.page .overlap-15 {
+  height: 569px;
+  left: 32px;
+  position: absolute;
+  top: 2165px;
+  width: 1376px;
+}
+
+.page .group-10 {
+  height: 54px;
+  left: 59px;
+  position: absolute;
+  top: 216px;
+  width: 59px;
+}
+
+.page .overlap-16 {
+  background-color: #d18eaa;
+  border-radius: 100px;
+  height: 54px;
+  position: relative;
+  width: 57px;
+}
+
+.page .text-wrapper-40 {
+  color: var(--color-4);
+  font-family: "e-Ukraine Head-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  height: 54px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28.0px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 57px;
+}
+
+   ├── import React from "react";
+import IMG0151 from "./IMG-0151.png";
+import "./style.css";
+
+export const Image = () => {
+  return (
+    <div className="image">
+      <img className="IMG" alt="Img" src={IMG0151} />
+    </div>
+  );
+};
